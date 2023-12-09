@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/badrisinghoo7.github.io/static/css/main.2457ff47.css",
+    "main.js": "/badrisinghoo7.github.io/static/js/main.6514c7de.js",
+    "static/media/Paint-ku.png": "/badrisinghoo7.github.io/static/media/Paint-ku.6123456b298d61dc1487.png",
+    "static/media/INR-CLUB.png": "/badrisinghoo7.github.io/static/media/INR-CLUB.c9c474b3229944f6a605.png",
+    "static/media/Project4.jpg": "/badrisinghoo7.github.io/static/media/Project4.8de82fea50154dddbe24.jpg",
+    "static/media/RentoMojo.jpeg": "/badrisinghoo7.github.io/static/media/RentoMojo.8924c98ebb30f214bff7.jpeg",
+    "static/media/Covid-19 Project.jpg": "/badrisinghoo7.github.io/static/media/Covid-19 Project.285d47443247c9a7a625.jpg",
+    "static/media/Jokes Project.jpg": "/badrisinghoo7.github.io/static/media/Jokes Project.133f44f42c2b6b0c1781.jpg",
+    "static/media/Me.jpg": "/badrisinghoo7.github.io/static/media/Me.db62c7cbf9b1920e3977.jpg",
+    "index.html": "/badrisinghoo7.github.io/index.html",
+    "main.2457ff47.css.map": "/badrisinghoo7.github.io/static/css/main.2457ff47.css.map",
+    "main.6514c7de.js.map": "/badrisinghoo7.github.io/static/js/main.6514c7de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2457ff47.css",
+    "static/js/main.6514c7de.js"
+  ]
+}
