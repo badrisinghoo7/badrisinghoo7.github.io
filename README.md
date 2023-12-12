@@ -22,7 +22,6 @@ Check out the live version of my portfolio website: (https://badrisinghoo7.githu
 - HTML5
 - CSS3
 - JavaScript
-- jQuery
 
 ## Usage
 
