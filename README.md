@@ -5,7 +5,7 @@ This repository contains the source code and assets for my personal portfolio we
 ## Live Demo
 
 Check out the live version of my portfolio website: (https://badrisinghoo7.github.io/)
-![Demo](https://github.com/AK016/AK016.github.io/assets/123861375/e0f6d4fd-cfa6-4e8b-9d1d-1a38424118cd)
+![Demo]
 
 
 
