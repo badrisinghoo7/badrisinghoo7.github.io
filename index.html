@@ -5,30 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="/images/image-removebg-preview.png"
+      type="jpeg/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
   </head>
 
   <body>
     <!-- Navbar -->
     <nav id="nav-menu">
-      <ul>
-        <li><a href="#home" class="nav-link home">Home</a></li>
-        <li><a href="#about" class="nav-link about">About</a></li>
-        <li><a href="#skills" class="nav-link skills">Skills</a></li>
-        <li><a href="#projects" class="nav-link projects">Projects</a></li>
-        <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <!-- <ul>
+            <li class="logo"><a href="#"><img src="/images/image-removebg-preview.png" alt=""></a></li> -->
+      <!-- dark mode toggle 
+            <label class="switch" title="Dark-Mode">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </ul> -->
+
+      <ul id="nav-links" class="hidden">
+        <li><a href="#home" class="nav-link home turnoff">Home</a></li>
+        <li><a href="#about" class="nav-link about turnoff">About</a></li>
+        <li><a href="#skills" class="nav-link skills turnoff">Skills</a></li>
         <li>
-          <a class="nav-link resume" href="https://drive.google.com/uc?id=1mRls1S3KWHpJXH86AzjXrsLxscZyWpo-&export=download" id="resume-button-1">Resume</a>
+          <a href="#projects" class="nav-link projects turnoff">Projects</a>
+        </li>
+        <li><a href="#contact" class="nav-link contact turnoff">Contact</a></li>
+        <li>
+          <a
+            class="nav-link resume turnoff"
+            href="https://drive.google.com/uc?id=1Bbx92zGtN_iD1_K9pIu7ZwGRHqKo-qmP&export=download"
+            target="_blank"
+            download
+            id="resume-button-1"
+            >Resume</a
+          >
         </li>
       </ul>
+      <button id="nav-toggle-button">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
       <div class="container">
-        <div class="profile">
-          <img src="" alt="Professional Photo" class="home-img" />
-          <h1 id="user-detail-name">Badri Vishal Singh</h1>
-          <p >Full Stack MERN Developer</p>
+        <div class="home-content">
+          <div class="home-text">
+            <h1 id="user-detail-name">BADRI VISHAL SINGH</h1>
+            <h2>
+              <span class="stationary-text">I'm a</span>
+              <span id="job-title"></span>
+            </h2>
+            <div class="social">
+              <a
+                href="https://github.com/badrisinghoo7"
+                title="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/badri-vishal-singh-9299a91b3/"
+                title="LinkedIn"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin" style="color: #4783eb"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <img
+              src="/images/Profile.jpg"
+              alt="Your Photo"
+              class="home-img"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -38,113 +93,135 @@
       <div class="container">
         <div class="about-content">
           <h2 class="section-title">About</h2>
-          <p id="user-detail-intro" class="about-description">
-            Highly skilled full stack web developer with expertise in the MERN
-            stack(HTML, CSS, JavaScript, React). Proficient in solving complex data structures and algorithms
-            (DSA) problems. Experienced in delivering successful solo and
-            collaborative projects, showcasing technical prowess and strong
-            teamwork. Ready to contribute to innovative web development
-            endeavors.
-
+          <p class="about-description" id="user-detail-intro">
+            1+ years experienced Front End Developer with hands-on experience in
+            identifying web-based user interactions along with designing and
+            implementing highly-responsive user interface components by
+            deploying React concepts. Proficient in translating designs and
+            wireframes into high-quality code, and writing application interface
+            code via JavaScript and React JS workflows. Adept at monitoring and
+            maintaining frontend performance and troubleshooting and debugging
+            the same to bolster overall performance.
           </p>
         </div>
-
         <div class="resume-buttons">
           <a
             class="resume-button"
             id="resume-button-2"
-            href="https://drive.google.com/uc?id=1mRls1S3KWHpJXH86AzjXrsLxscZyWpo-&export=download"
-            >Download Resume</a
+            href="https://drive.google.com/uc?id=1Bbx92zGtN_iD1_K9pIu7ZwGRHqKo-qmP&export=download"
+            target="_blank"
+            download
           >
+            <button class="button-62" role="button">Download Resume</button>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- SkillSection -->
-
+    <!-- Skills Section -->
     <section id="skills">
-      <div class="box22">
-
-        <div class="skills-card" style="--i: 2">
-          <div>
-            <img
-              class="skills-card-img"
-              src="Skills_Logo/Postman_logo.png"
-              alt=""
-            />
-          </div>
-          <div class="skills-card-name">Postman</div>
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title">Technical Skills</h2>
         </div>
-
-        <div class="skills-card" style="--i: 3">
-          <div>
+        <div class="skills-card-container">
+          <div class="skills-card">
             <img
+              src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg"
-              alt=""
             />
+            <h3 class="skills-card-name">HTML</h3>
           </div>
-          <div class="skills-card-name">MySQL</div>
-        </div>
-
-        <div class="skills-card" style="--i: 4">
-          <div>
+          <div class="skills-card">
             <img
+              src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="Skills_Logo/VS_Code_logo.png"
-              alt=""
             />
+            <h3 class="skills-card-name">CSS</h3>
           </div>
-          <div class="skills-card-name">VS Code</div>
-        </div>
-
-        <div class="skills-card" style="--i: 5">
-          <div>
+          <div class="skills-card">
             <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="Skills_Logo/Git_logo.png"
-              alt=""
             />
+            <h3 class="skills-card-name">JAVASCRIPT</h3>
           </div>
-          <div class="skills-card-name">Git</div>
-        </div>
-
-        <div class="skills-card" style="--i: 6">
-          <div>
+          <div class="skills-card">
             <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="Skills_Logo/html_logo.png"
-              alt=""
             />
+            <h3 class="skills-card-name">PYTHON</h3>
           </div>
-          <div class="skills-card-name">HTML</div>
-        </div>
-
-        <div class="skills-card" style="--i: 7">
-          <div>
+          <div class="skills-card">
             <img
+              src="https://www.vectorlogo.zone/logos/github/github-icon.svg"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="Skills_Logo/css_logo.webp"
-              alt=""
             />
+            <h3 class="skills-card-name">GITHUB</h3>
           </div>
-          <div class="skills-card-name">CSS</div>
-        </div>
-
-        <div class="skills-card" style="--i: 8">
-          <div>
+          <div class="skills-card">
             <img
+              src="https://upload.vectorlogo.zone/logos/js_redux/images/02d76d00-fc90-4c0e-bce7-8a02b6c89d4f.svg"
+              alt="Skill Icon"
               class="skills-card-img"
-              src="Skills_Logo/js_logo2.jpg"
-              alt=""
             />
+            <h3 class="skills-card-name">REDUX</h3>
           </div>
-          <div class="skills-card-name">JavaScript</div>
+          <div class="skills-card">
+            <img
+              src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">REACT</h3>
+          </div>
+          <div class="skills-card">
+            <img
+              src="https://www.svgrepo.com/show/354202/postman-icon.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">POSTMAN</h3>
+          </div>
+          <div class="skills-card">
+            <img
+              src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">TYPESCRIPT</h3>
+          </div>
+          <div class="skills-card">
+            <img
+              src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">MONGO DB</h3>
+          </div>
+          <div class="skills-card">
+            <img
+              src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">NODE.js</h3>
+          </div>
+          <div class="skills-card">
+            <img
+              src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg"
+              alt="Skill Icon"
+              class="skills-card-img"
+            />
+            <h3 class="skills-card-name">EXPRESS</h3>
+          </div>
         </div>
-
-        
-
-        
       </div>
     </section>
 
@@ -152,159 +229,292 @@
     <section id="projects">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <div class="project-carousel">
-          <div class="project-card-container">
-            <div class="project-card">
-              <!-- Project 1 content -->
-              <img src="#" alt="" />
-              <h2 class="project-title">xyz</h2>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                nam!
-              </p>
-              <p class="project-tech-stack">HTML | CSS | JavaScript</p>
-              <a href="#" class="project-github-link">Github</a>
-              <a href="#" class="project-deployed-link">Netlify</a>
+        <div class="project-card-container">
+          <!-- Project 1 content -->
+          <div class="project-card" data-index="0">
+            <img
+              class="project-image"
+              src="/images//INR-CLUB.png"
+              alt=""
+            />
+            <h2 class="project-title">INRClub</h2>
+            <p class="project-description">
+              INRClub is intended for anyone looking to book a hotel room,
+              whether for business or leisure.
+            </p>
+            <p class="project-tech-stack">
+              Tech Stack: <span class="techs">Html | CSS | Javascript</span>
+            </p>
+            <div class="deployed-links">
+              <a
+                href="https://github.com/badrisinghoo7/INRClub"
+                class="project-github-link"
+                title="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://inrclub.netlify.app/"
+                class="project-deployed-link"
+                title="Deployed-Link"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
             </div>
-
-            <div class="project-card">
-              <!-- Project 2 content -->
-              <img src="#" alt="" />
-              <h2 class="project-title">xyz</h2>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                nam!
-              </p>
-              <p class="project-tech-stack">HTML | CSS | JavaScript</p>
-              <a href="#" class="project-github-link">Github</a>
-              <a href="#" class="project-deployed-link">Netlify</a>
-            </div>
-
-            <div class="project-card">
-              <!-- Project 3 content -->
-              <img src="#" alt="" />
-              <h2 class="project-title">xyz</h2>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                nam!
-              </p>
-              <p class="project-tech-stack">HTML | CSS | JavaScript</p>
-              <a href="#" class="project-github-link">Github</a>
-              <a href="#" class="project-deployed-link">Netlify</a>
-            </div>
-
-            <div class="project-card">
-              <!-- Project 4 content -->
-              <img src="#" alt="" />
-              <h2 class="project-title">xyz</h2>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                nam!
-              </p>
-              <p class="project-tech-stack">HTML | CSS | JavaScript</p>
-              <a href="#" class="project-github-link">Github</a>
-              <a href="#" class="project-deployed-link">Netlify</a>
-            </div>
-
-            <div class="project-card">
-              <!-- Project 5 content -->
-              <img src="#" alt="" />
-              <h2 class="project-title">xyz</h2>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                nam!
-              </p>
-              <p class="project-tech-stack">HTML | CSS | JavaScript</p>
-              <a href="#" class="project-github-link">Github</a>
-              <a href="#" class="project-deployed-link">Netlify</a>
-            </div>
+            <!-- <a href="#" class="project-video-link">Netlify</a> -->
           </div>
-        </div>
-        <div class="project-controls">
-          <button class="project-control-btn prev-btn" id="prevBtn">
-            &lt;
-          </button>
-          <button class="project-control-btn next-btn" id="nextBtn">
-            &gt;
-          </button>
+          <!-- Project 2 content -->
+          <div class="project-card" data-index="1">
+            <img class="project-image" src="/images//Paint-ku.png" alt="" />
+            <h2 class="project-title">PaintKu</h2>
+            <p class="project-description">
+              PaintKu. is basically E-Commerce which allows user to buy
+              Paintings from online store..
+            </p>
+            <p class="project-tech-stack">
+              Tech Stack:
+              <span class="techs"
+                >HTML | CSS | JavaScript | React | Node.js | Express |
+                MongoDB</span
+              >
+            </p>
+            <div class="deployed-links">
+              <a
+                href="https://github.com/badrisinghoo7/loud-weight-1875"
+                class="project-github-link"
+                title="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://paintku.vercel.app/"
+                class="project-deployed-link"
+                title="Deployed-Link"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+            </div>
+            <!-- <a href="#" class="project-video-link">Netlify</a> -->
+          </div>
+          <!-- Project 3 content -->
+          <div class="project-card" data-index="2">
+            <img class="project-image" src="/images//RentoMojo.jpeg" alt="" />
+            <h2 class="project-title">RentoMojo</h2>
+            <p class="project-description">
+              RentoMojo is an online rental platform that provides furniture,
+              appliances and electronics (mobiles, laptops) on a monthly rental
+              basis.
+            </p>
+            <p class="project-tech-stack">
+              Tech Stack:
+              <span class="techs">HTML | CSS | JavaScript | React</span>
+            </p>
+            <div class="deployed-links" target="_blank">
+              <a
+                href="https://github.com/badrisinghoo7/-scared-note-9891"
+                class="project-github-link"
+                title="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://elegant-banoffee-7a39a4.netlify.app/"
+                class="project-deployed-link"
+                title="Deployed-Link"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+            </div>
+            <!-- <a href="#" class="project-video-link">Netlify</a> -->
+          </div>
+          <!-- Project 4 content -->
+          <!-- <div class="project-card" data-index="3">
+            <img class="project-image" src="/images/Tic_Tac_Toe.png" alt="" />
+            <h2 class="project-title">Tic-Tac-Toe</h2>
+            <p class="project-description">
+              Tic-Tac-Toe is a classic two-player game built using HTML, CSS,
+              and JavaScript. It provides a simple and fun way to play the
+              popular game on your web browser. Challenge a friend and see who
+              can get three in a row!
+            </p>
+            <p class="project-tech-stack">
+              Tech Stack: <span class="techs">HTML | CSS | JavaScript</span>
+            </p>
+            <div class="deployed-links" target="_blank">
+              <a
+                href="https://github.com/badrisinghoo7/Tic-Tac-Toe"
+                class="project-github-link"
+                title="GitHub"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://tic-tac-toe16.netlify.app/"
+                class="project-deployed-link"
+                title="Deployed-Link"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+            </div> -->
+            <!-- <a href="#" class="project-video-link">Netlify</a> -->
+          </div>
+          <!-- Project 5 content -->
+          <!-- <div class="project-card" data-index="4">
+            <img class="project-image" src="/images/CodeFuse.png" alt="" />
+            <h2 class="project-title">CodeFuse</h2>
+            <p class="project-description">
+              CodeFuse is an interview taking platform that leverages the power
+              of OpenAI's GPT-3 for conducting interviews and providing
+              responses. This platform allows interviewers to interact with
+              candidates through a chat interface powered by ChatGPT,
+              streamlining the interview process.
+            </p>
+            <p class="project-tech-stack">
+              Tech Stack: <span class="techs">JAVA | React | TypeScript</span>
+            </p>
+            <div class="deployed-links" target="_blank">
+              <a
+                href="https://github.com/badrisinghoo7/CodeFuse"
+                class="project-github-link"
+                title="GitHub"
+                ><i class="fa-brands fa-github" style="color: #6abde7"></i
+              ></a>
+              <a
+                href="https://codefuse-mu.vercel.app/"
+                class="project-deployed-link"
+                title="Deployed-Link"
+                target="_blank"
+                ><i class="fa-solid fa-eye"></i
+              ></a>
+            </div> -->
+            <!-- <a href="#" class="project-video-link">Netlify</a> -->
+          <!-- </div> -->
+          <!-- Project 6 content -->
+          <!-- <div class="project-card" data-index="5">
+                    <img class="project-image" src="/images/CodeFuse.png" alt="">
+                    <h2 class="project-title">CodeFuse</h2>
+                    <p class="project-description">CodeFuse is an interview taking platform that leverages the power of
+                        OpenAI's GPT-3 for conducting interviews and providing responses. This platform allows
+                        interviewers to interact with candidates through a chat interface powered by ChatGPT,
+                        streamlining the interview process.</p>
+                    <p class="project-tech-stack">Tech Stack: <span class="techs">JAVA | React | TypeScript</span></p>
+                    <div class="deployed-links" target="_blank">
+                        <a href="https://github.com/badrisinghoo7/CodeFuse" class="project-github-link" title="GitHub"><i
+                                class="fa-brands fa-github" style="color: #6abde7;"></i></a>
+                        <a href="https://codefuse-mu.vercel.app/" class="project-deployed-link" title="Deployed-Link"
+                            target="_blank"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <a href="#" class="project-video-link">Netlify</a> -->
+          <!-- </div> -->
         </div>
       </div>
     </section>
 
     <!-- gitHub streak stats -->
-
-    <div class="container">
-      <div class="section-wrapper">
-        <h2 class="section-title">Github Profile</h2>
-      </div>
-    </div>
-
-    <div class="github">
-      <div>
-        <a class="react-activity-calendar" href="https://git.io/streak-stats">
-          <img
-            id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=badrisinghoo7&theme=highcontrast&border_radius=5"
-            alt="GitHub Streak Stats"
-          />
-        </a>
-      </div>
-
-      <div>
-        <a
-          class="react-activity-calendar"
-          href="https://github.com/badrisinghoo7/github-readme-stats"
-        >
-          <img
-            id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=badrisinghoo7"
-            alt="GitHub Stats Card"
-          />
-        </a>
-      </div>
-
-      <div>
-        <a
-          class="react-activity-calendar"
-          href="https://github.com/badrisinghoo7/github-readme-stats"
-        >
-          <img
-            id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=badrisinghoo7"
-            alt="GitHub Top Langs"
-          />
-        </a>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <h2 class="section-title">Contact</h2>
-        </div>
-        <ul class="contact-list">
-          <li>
-            <a href="https://github.com/badrisinghoo7" id="contact-github"
-              >GitHub</a
-            >
-          </li>
-          <li>
+    <h2 class="section-title" id="github-title">GitHub Stats</h2>
+    <section id="github">
+      <div class="github">
+        <div>
+          <div class="container github">
             <a
-              href="https://www.linkedin.com/in/badri-vishal-singh-9299a91b3/"
-              id="contact-linkedin"
-              >LinkedIn</a
+              class="react-activity-calendar"
+              href="https://git.io/streak-stats"
             >
-          </li>
-          <li><a href="#" id="contact-phone">Phone: +91 8090616513 </a></li>
-          <li>
-            <a href="mailto:badri.singh8090@gmail.com" id="contact-email">Email</a>
-          </li>
-        </ul>
+              <img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com/?user=badrisinghoo7&theme=highcontrast&border_radius=5"
+                alt="GitHub Streak Stats"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="container">
+            <a
+              class="react-activity-calendar"
+              href="https://github.com/badrisinghoo7/github-readme-stats"
+            >
+              <img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=badrisinghoo7"
+                alt="GitHub Stats Card"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="container">
+            <a
+              class="react-activity-calendar"
+              href="https://github.com/badrisinghoo7/github-readme-stats"
+            >
+              <img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=badrisinghoo7"
+                alt="GitHub Top Langs"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contant-container">
+        <a href="https://github.com/badrisinghoo7" id="contact-github"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/badri-vishal-singh-9299a91b3/"
+          id="contact-linkedin"
+          >LinkedIn</a
+        >
+        <a href="tel: +91 8090616513" id="contact-phone">Phone</a>
+        <a href="mailto:badri.singh8090@gmail.com" id="contact-email">Email</a>
+      </div>
+      <br />
+      <div class="messageme">
+        <div id="contactlogo">
+          <img
+            src="https://user-images.githubusercontent.com/69011963/137184767-79a13ec7-1bb3-4341-a6da-3a149c9c159a.gif"
+            alt=""
+          />
+        </div>
+        <div>
+          <form
+            action="https://formsubmit.co/badri.singh@gmail.com"
+            method="POST"
+            id="messageme"
+          >
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="number"
+              name="Phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="text" name="Subject" placeholder="Subject" required />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="rights gradient-text">Designed and developed by BADRI VISHAL SINGH</h2>
+
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b2fe669610.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
+
+<!-- https://drive.google.com/uc?id=17lTCB0ULBn3aTPEWN0j5AawZoRk-xccd&export=download -->
+<!-- https://drive.google.com/uc?id=17lTCB0ULBn3aTPEWN0j5AawZoRk-xccd&export=download -->
