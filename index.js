@@ -311,14 +311,14 @@ window.addEventListener("resize", handleScreenSizeChange);
 // Initial call to handle screen size on page load
 handleScreenSizeChange();
 
-var buttonSend = document.getElementById("submit");
+// var buttonSend = document.getElementById("submit");
 
-buttonSend.addEventListener("click", function () {
-  // Replace 'Badri Vishal Singh' with the desired recipient's name
-  const recipientName = "Badri Vishal Singh";
+// buttonSend.addEventListener("click", function () {
+//   // Replace 'Badri Vishal Singh' with the desired recipient's name
+//   const recipientName = "Badri Vishal Singh";
 
-  // Display a pop-up or alert with the result message
-  alert(
-    `Your message has been sent to ${recipientName}. Thank you for reaching out to me.`
-  );
-});
+//   // Display a pop-up or alert with the result message
+//   alert(
+//     `Your message has been sent to ${recipientName}. Thank you for reaching out to me.`
+//   );
+// });
