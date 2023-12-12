@@ -5,7 +5,7 @@ This repository contains the source code and assets for my personal portfolio we
 ## Live Demo
 
 Check out the live version of my portfolio website: (https://badrisinghoo7.github.io/)
-![Demo](https://github.com/badrisinghoo7/badrisinghoo7.github.images/portfolio.png/)
+![Demo](https://github.com/badrisinghoo7/badrisinghoo7.github.io/blob/main/images/portfolio.png)
 
 
 
