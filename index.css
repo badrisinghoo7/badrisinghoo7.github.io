@@ -60,15 +60,16 @@ body {
 }
 
 #resume-button-1 {
-  background-color: rgb(153, 15, 15);
+  background-color: rgb(106, 72, 72);
   padding: 10px 15px;
   border-radius: 15px;
 }
 
 #resume-button-1:hover {
-  color: rgb(220, 60, 80);
+  color: rgb(178, 124, 131);
   background-color: white;
   font-size: 21px;
+  font-weight: bold;
   border: 2px solid rgb(158, 127, 130);
 }
 
@@ -136,7 +137,7 @@ body {
 
 #resume-1 {
   text-decoration: none;
-  background-color: rgb(220, 20, 60);
+  background-color: rgb(193, 116, 131);
   padding: 10px 15px 10px 15px;
   border-radius: 15px;
   color: white;
@@ -147,7 +148,7 @@ body {
   background-color: white;
   color: rgb(220, 20, 60);
   border: 2px solid;
-  border-color: rgb(220, 20, 60);
+  border-color: rgb(123, 47, 62);
 }
 
 .social {
