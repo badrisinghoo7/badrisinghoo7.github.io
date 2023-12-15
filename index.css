@@ -19,13 +19,14 @@ body {
   /* justify-content: space-between; */
   justify-content: space-around;
   align-items: center;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(93, 92, 92);
+  background-color: rgb(2, 2, 2);
   color: white;
   z-index: 1000;
+  padding: 10px;
 }
 
 .logo img {
@@ -56,11 +57,11 @@ body {
 }
 
 #nav-menu li a:hover {
-  color: rgb(20, 220, 117);
+  color: rgb(240, 17, 17);
 }
 
 #resume-button-1 {
-  background-color: rgb(106, 72, 72);
+  background-color: rgb(240, 17, 17);
   padding: 10px 15px;
   border-radius: 15px;
 }
