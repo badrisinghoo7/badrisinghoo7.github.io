@@ -323,7 +323,8 @@ body {
 .deployed-links {
   font-size: 24px;
   display: flex;
-  justify-content: space-between;
+  margin-top: 20px;
+  justify-content: space-around;
 }
 
 /* Responsive layout for screens smaller than 768px */
