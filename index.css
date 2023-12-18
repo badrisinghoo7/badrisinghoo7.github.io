@@ -452,6 +452,7 @@ body {
   background-color: #f8f8f8;
   padding: 60px 0;
   text-align: center;
+  /* display: flex; */
 }
 
 .section-title {
@@ -632,9 +633,6 @@ button[type="submit"]:hover {
   background-clip: text;
   color: transparent;
 }
-
-
-
 
 
 
@@ -892,7 +890,9 @@ body.dark-mode {
   }
 }
 
-
+/* .contact-item{
+  display: flex;
+} */
 
 /* Further responsive adjustments for screens smaller than 480px */
 @media screen and (max-width: 480px) {
